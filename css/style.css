@@ -1,0 +1,430 @@
+/*Start Framework*/
+
+*{
+    font-family: Arial, Tahoma;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 65%;
+    margin: auto;
+}
+
+.hidden{display: none;}
+
+.transition{
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.backgroundSize{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+.posRelative{
+    position: relative;
+    z-index: 2;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main-button{
+    padding: 10px;
+    width: 22%;
+    border: none;
+    border-radius: 5px;
+    background-color: #ca0;
+    font-size: 15px;
+    color: #fff;
+    outline: none;
+}
+
+.center{text-align: center;}
+
+.upper{text-transform: uppercase;}
+
+.bold{font-weight: bold;}
+
+.float-left{float: left;}
+
+.float-right{float: right;}
+
+.overflow{overflow: hidden;}
+
+.main-color{color: #ca0;}
+
+.main-backgroundColor{background-color: #ca0;}
+
+.padding{padding: 15px;}
+
+/*End Framework*/
+
+/*Start header*/
+
+header{
+    color:#fff;
+    background-image: url(../images/technology.png);
+    position: relative;
+}
+
+header .container nav i{margin-left: 10px;}
+
+header .container main{margin-top: 22%;}
+
+header .container main h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+header .container main p{
+    margin: 0 auto 40px auto;
+    line-height: 1.9;
+}
+
+header .container main button{
+    color: #fff;
+    background: transparent;
+    border: 1px solid #aaa;
+    margin-left: 20px;
+    margin-bottom: 130px;
+}
+
+header .container main button:hover{
+    background-color: #ca0;
+    border: 1px solid #ca0;
+}
+
+header .container .arrow{
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    z-index: 2;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 7px;
+    width: 35px;
+    cursor: pointer;
+}
+
+/*End header*/
+
+/*Start feature*/
+
+.feature{margin-top: 70px; margin-bottom: 70px;}
+
+.feature .box{
+    float: left;
+    width: 22%;
+    margin-right: 4%;
+    color: #666;
+}
+
+.feature .box:last-child{margin-right: 0;}
+
+.feature .box i{
+    color:#ca0;
+    border: 2px solid #aa9;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+}
+
+.feature .box i:hover{
+    background-color: #ca0;
+    color: #fff;
+    border: 2px solid #ca0;
+}
+
+.feature .box h3{font-weight: normal;}
+
+/*End feature*/
+
+/*Start subscribe*/
+
+.subscribe{
+    height: 200px;
+    background-image: url(../images/subscribe.jpg);
+    line-height: 200px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.subscribe input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 45%;
+}
+
+.subscribe button {margin-left: 20px;}
+
+.subscribe button:hover {
+    background-color: #fff;
+    color:#ca0;
+}
+
+/*End subscribe*/
+
+/*Start our work*/
+
+.our-work > h1{font-weight: 500;}
+
+.our-work > p{
+    margin-bottom: 80px;
+    color: #777;
+}
+
+.our-work .boxes{margin-bottom: 40px;}
+
+.our-work .boxes .box{
+    width: 32%;
+    height: 250px;
+    margin-right: 1.333%;
+    margin-bottom: 1.333%;
+    position: relative;
+}
+
+.our-work .boxes .box img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.our-work .boxes .box:hover .overlay{
+    background-color: rgba(204, 170, 0, 0.9);
+    color: #fff;
+}
+
+.our-work .boxes .box:hover .overlay button{
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.our-work .boxes .box .overlay{
+    background-color: transparent;
+    border-radius: 10px;
+    color: transparent;
+    padding-top: 5%;
+    line-height: 1.7;
+    font-size: 100%;
+}
+
+.our-work .boxes .box .overlay button{
+    width: 60%;
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: transparent;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+.our-work .boxes .box .overlay button:hover{
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #ca0;
+}
+
+.our-work .show-more{
+    background-color: transparent;
+    color:#000;
+    border: 2px solid #ccc;
+    margin: 30px;
+}
+
+.our-work .show-more:hover{
+    cursor: pointer;
+    background-color: #ca0;
+    color:#fff;
+    border: 2px solid #ca0;
+}
+
+/*End our work*/
+
+/*Start clients*/
+
+.testmonial {
+    position: relative;
+    padding: 30px;
+    background-image: url(../images/subscribe.jpg);
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.testmonial .client{display: none;}
+
+.testmonial .active{display: block;}
+
+.testmonial .client img{border-radius: 50%;}
+
+.testmonial .container{position: relative;}
+
+.testmonial .client p{
+    line-height: 2;
+    font-style: italic;
+}
+
+.testmonial .client span{
+    display: block;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.testmonial .fa-chevron-right,.fa-chevron-left{
+    color:#ddd;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    cursor: pointer;
+}
+
+.testmonial .fa-chevron-right{right:0;}
+
+.testmonial .fa-chevron-left{left:0;}
+
+/*End clients*/
+
+/*Start our team*/
+
+.our-team{
+    color:#666;
+    margin: 80px auto;
+}
+
+.our-team p{margin-bottom: 30px;}
+
+.our-team .members .person {
+    width: 23%;
+    margin-right: 2%;
+}
+
+.our-team .members .person:hover{color:#000;}
+
+.our-team .members .person:hover img{
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.our-team .members .person:hover i{color:#fff;}
+
+.our-team .members .person:hover .fa-facebook{background-color: #04f;}
+
+.our-team .members .person:hover .fa-twitter{background-color: #09f;}
+
+.our-team .members .person:hover .fa-google-plus{background-color: #f00;}
+
+.our-team .members .person img{
+    width: 100%;
+    height: 100%;
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    filter: grayscale(1);
+    border-radius: 10px;
+}
+
+.our-team .members .person span{
+    display: block;
+    margin: 20px;
+}
+
+.our-team .members .person i{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color:#ccc;
+    border-radius: 50%;
+    background-color: #666;
+}
+
+/*End our team*/
+
+/*Start contact*/
+
+.contact{
+    background-image: url(../images/technology.png);
+    position: relative;
+    color:#fff;
+    padding: 50px;
+}
+
+.contact .container p{line-height: 2;}
+
+.contact .container form input{
+    width: 43%;
+    margin: 30px 0;
+}
+.contact .container form input,.contact .container form textarea{
+    border-radius: 10px;
+    outline: none;
+    border:none;
+}
+
+.contact .container form input:first-child{margin-right: 4%;}
+
+.contact .container form textarea{
+    width: 90%;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.contact .container .socials{
+    float: right;
+    margin-right: 40px;
+}
+
+.contact .container form button{margin-left: 40px;}
+
+.contact .container .socials i{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.contact .container .socials .fa-facebook{background-color: #04f;}
+
+.contact .container .socials .fa-twitter{background-color: #09f;}
+
+.contact .container .socials .fa-google-plus{background-color: #f00;}
+
+/*End contact*/
+
+/*Start footer*/
+
+footer{
+    background-color: #333;
+    color: #ccc;
+    padding: 30px;
+}
+
+.desgined{float: right}
+
+/*End footer*/
